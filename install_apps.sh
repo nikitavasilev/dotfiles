@@ -9,20 +9,21 @@
 sudo apt-get update -y
 
 # Git
-echo 'Installing Git..'
+echo '\nInstalling Git..'
 sudo apt-get install git -y
 
 # Git Configuration
-echo 'Congigurating Git..'
+echo '\nCongigurating Git..'
+sleep 2
 
-echo 'Enter the Global Username for Git (FirstName LastName):'
+echo '\nEnter the Global Username for Git (FirstName LastName):'
 read GIT_USER
 git config --global user.name "${GIT_USER}"
 
-echo "Enter the Global Email for Git:"
+echo "\nEnter the Global Email for Git:"
 read GIT_EMAIL
 git config --global user.email "${GIT_EMAIL}"
 
-echo 'Git has been configured!'
+echo '\nGit has been configured!'
 git config --list
 
