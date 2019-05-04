@@ -1,0 +1,20 @@
+{
+  "workbench.colorTheme": "Material Theme Palenight High Contrast",
+  "window.zoomLevel": 0,
+  // Tab Size, always 2 except Python
+  "editor.tabSize": 2,
+  "[python]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4
+  },
+  // auto-save configs
+  "editor.formatOnSave": true,
+  // turn it off for JS
+  "prettier.disableLanguages": ["js"],
+  // eslint + prettier config
+  "eslint.alwaysShowStatus": true,
+  "prettier.eslintIntegration": true,
+  "eslint.autoFixOnSave": true,
+  "liveshare.featureSet": "insiders",
+  "prettier.singleQuote": true
+}
