@@ -1,0 +1,11 @@
+syntax enable
+set number
+set mouse=a
+set title
+set showmatch
+set smartindent
+set autoindent
+set ruler
+set background=dark
+colorscheme solarized
+execute pathogen#infect()
