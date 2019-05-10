@@ -14,8 +14,7 @@ sudo apt-get update -y
 echo -e "\nDo you want to install GIT? (Highly recommended) [Y/n]"
 read GIT
 
-if [[ ${GIT} == "y" ]] || [[ ${GIT} == "Y" ]]
-then
+if [[ ${GIT} == "y" ]] || [[ ${GIT} == "Y" ]]; then
   echo -e '\nInstalling Git..'
   sudo apt-get install git -y
 
@@ -39,12 +38,17 @@ fi
 
 sleep 2
 
+# add-apt-repository
+sudo apt-get install software-properties-common -y
+
+# Snapd
+sudo apt-get install snapd -y
+
 # cURL
 echo -e '\nDo you want to install cURL? (Recommended) [Y/n]'
 read CURL
 
-if [[ ${CURL} == "y" ]] || [[ ${CURL} == "Y" ]]
-then
+if [[ ${CURL} == "y" ]] || [[ ${CURL} == "Y" ]]; then
   echo -e '\nInstalling cURL..'
   sudo apt-get install curl -y
 
@@ -63,8 +67,7 @@ sleep 2
 echo -e '\nDo you want to install Yarn? (Recommended) [Y/n]'
 read YARN
 
-if [[ ${YARN} == "y" ]] || [[ ${YARN} == "Y" ]]
-then
+if [[ ${YARN} == "y" ]] || [[ ${YARN} == "Y" ]]; then
   echo -e '\nInstalling Yarn..'
   curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
   echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
@@ -88,10 +91,9 @@ sleep 2
 echo -e '\nDo you want to install Spotify? [Y/n]'
 read SPOTIFY
 
-if [[ ${SPOTIFY} == "y" ]] || [[ ${SPOTIFY} == "Y" ]]
-then
+if [[ ${SPOTIFY} == "y" ]] || [[ ${SPOTIFY} == "Y" ]]; then
   echo -e '\nInstalling Spotify...'
-  snap install spotify
+  sudo snap install spotify
 
   echo -e '\nChecking installation:'
   spotify --version
@@ -106,8 +108,7 @@ sleep 2
 echo -e '\nDo you want to install Python3 + pip3? [Y/n]'
 read PYTHON
 
-if [[ ${PYTHON} == "y" ]] || [[ ${PYTHON} == "Y" ]]
-then
+if [[ ${PYTHON} == "y" ]] || [[ ${PYTHON} == "Y" ]]; then
   # Python3
   echo -e '\nInstalling Python3..'
   sudo apt-get install python3 -y
@@ -136,8 +137,7 @@ sleep 2
 echo -e '\nDo you want to install Ruby + RubyOnRails + Bundler? [Y/n]'
 read RUBY
 
-if [[ ${RUBY} == "y" ]] || [[ ${RUBY} == "Y" ]]
-then
+if [[ ${RUBY} == "y" ]] || [[ ${RUBY} == "Y" ]]; then
   # Ruby
   echo -e '\nInstalling Ruby..'
   sudo apt install ruby-full -y

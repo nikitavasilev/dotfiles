@@ -16,5 +16,6 @@
   "prettier.eslintIntegration": true,
   "eslint.autoFixOnSave": true,
   "liveshare.featureSet": "insiders",
-  "prettier.singleQuote": true
+  "prettier.singleQuote": true,
+  "shellformat.path": "/snap/bin/shfmt"
 }

@@ -17,8 +17,9 @@ CODE_EXTENSIONS=(
   msjsdiag.debugger-for-chrome
   PeterJausovec.vscode-docker
   vscode-icons-team.vscode-icons
+  foxundermoon.shell-format
 )
 
-for ext in "$CODE_EXNTENSIONS"; do
+for ext in "${CODE_EXTENSIONS[@]}"; do
   code --install-extension "$ext"
 done

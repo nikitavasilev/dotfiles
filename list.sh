@@ -25,7 +25,7 @@ echo -e '\nSkype:'
 echo 'https://www.skype.com/en/get-skype/download-skype-for-desktop/'
 
 echo -e '\nInstall the next apps via the Deepin App Store:'
-echo -e 'Kazam\nqBittorrent\nTor Browser\nVLC Media Player\nPopcorn Time\n'
+echo -e 'Kazam\nqBittorrent\nTor Browser\nVLC Media Player\nPopcorn Time\nDeepin Boot Maker\n'
 echo -e 'Bleachbit\nSynaptic Package Manager\nPlay on Linux\nVirtualBox\nGIMP\nInkscape\nHardinfo'
 
 echo -e '\nMake sure to set the Region to International instead of China!'
