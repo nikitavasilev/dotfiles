@@ -1,13 +1,10 @@
 #!/bin/bash
 
 # Installing NVM (Node Version Manager)
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 
-dir="$HOME/.zshrc"
-cd "$dir"
-
-sudo sh -c 'echo "\nexport NVM_DIR=~/.nvm
-[ -s "\$NVM_DIR/nvm.sh" ] && . "\$NVM_DIR/nvm.sh"" >> this_file.sh'
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
 #Nodejs
-nvm install v12.1.0
+nvm install v13.3.0
