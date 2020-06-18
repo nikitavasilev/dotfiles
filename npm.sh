@@ -15,6 +15,11 @@ echo -e '\nInstalling Nodemon..'
 npm install nodemon -g
 echo 'Nodemon succesfully installed!'
 
+# Gulp
+echo -e '\nInstalling Gulp..'
+npm install --global gulp-cli
+echo 'Gulp succesfully installed!'
+
 # npm-check-updates
 echo -e '\nInstalling npm-check-updates..'
 npm install -g npm-check-updates
