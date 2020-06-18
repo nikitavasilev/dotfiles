@@ -19,7 +19,7 @@ sleep 2
 
 echo -e "\nCreating a /etc/apt/sources.list.d/mongodb-org-4.0.list file for MongoDB..."
 sleep 2
-echo "deb http://repo.mongodb.org/apt/debian stretch/mongodb-org/4.0 main" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list
+echo "deb [arch=amd64] http://repo.mongodb.org/apt/debian stretch/mongodb-org/4.0 main" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list
 sleep 2
 
 echo -e "\nReloading local package database..."
