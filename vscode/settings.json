@@ -1,21 +1,39 @@
 {
   "workbench.colorTheme": "Material Theme Palenight High Contrast",
   "window.zoomLevel": 0,
-  // Tab Size, always 2 except Python
+  // always Indent by 2 spaces except python, C/C++
+  "editor.detectIndentation": false,
+  "editor.insertSpaces": true,
   "editor.tabSize": 2,
   "[python]": {
-    "editor.insertSpaces": true,
     "editor.tabSize": 4
   },
+  "[c]": {
+    "editor.tabSize": 4
+  },
+  "[cpp]": {
+    "editor.tabSize": 4
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   // auto-save configs
   "editor.formatOnSave": true,
-  // turn it off for JS
+  // disasable prettier for JS
   "prettier.disableLanguages": ["js"],
   // eslint + prettier config
   "eslint.alwaysShowStatus": true,
-  "prettier.eslintIntegration": true,
   "eslint.autoFixOnSave": true,
-  "liveshare.featureSet": "insiders",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.tslint": true
+  },
   "prettier.singleQuote": true,
-  "shellformat.path": "/snap/bin/shfmt"
+  "liveshare.featureSet": "insiders",
+  // path of shfmt binairie
+  "shellformat.path": "/snap/bin/shfmt",
+  // path of node binairie
+  "code-runner.executorMap": {
+    "javascript": "/home/nikki/.nvm/versions/node/v13.3.0/bin/node"
+  },
+  "python.jediEnabled": false,
+  "terminal.integrated.rendererType": "dom",
+  "vsicons.dontShowNewVersionMessage": true
 }

@@ -15,7 +15,7 @@ CODE_EXTENSIONS=(
   ms-vsliveshare.vsliveshare
   ms-vsliveshare.vsliveshare-audio
   msjsdiag.debugger-for-chrome
-  PeterJausovec.vscode-docker
+  ms-azuretools.vscode-docker
   vscode-icons-team.vscode-icons
   foxundermoon.shell-format
 )
