@@ -18,6 +18,7 @@ CODE_EXTENSIONS=(
   ms-azuretools.vscode-docker
   vscode-icons-team.vscode-icons
   foxundermoon.shell-format
+  digitalbrainstem.javascript-ejs-support
 )
 
 for ext in "${CODE_EXTENSIONS[@]}"; do
