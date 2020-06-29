@@ -19,6 +19,7 @@ CODE_EXTENSIONS=(
   vscode-icons-team.vscode-icons
   foxundermoon.shell-format
   digitalbrainstem.javascript-ejs-support
+  attilabuti.vscode-mjml
 )
 
 for ext in "${CODE_EXTENSIONS[@]}"; do
