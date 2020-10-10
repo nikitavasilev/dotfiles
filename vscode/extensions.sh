@@ -5,21 +5,23 @@ set -e
 # Can be updated with:
 # code --list-extensions
 CODE_EXTENSIONS=(
-  bajdzis.vscode-database
-  dbaeumer.vscode-eslint
-  Equinusocio.vsc-material-theme
-  esbenp.prettier-vscode
+  kube.42header
   formulahendry.code-runner
-  ms-python.python
   ms-vscode.cpptools
+  equinusocio.vsc-community-material-theme
+  msjsdiag.debugger-for-chrome
+  digitalbrainstem.javascript-ejs-support
+  dbaeumer.vscode-eslint
   ms-vsliveshare.vsliveshare
   ms-vsliveshare.vsliveshare-audio
-  msjsdiag.debugger-for-chrome
-  ms-azuretools.vscode-docker
-  vscode-icons-team.vscode-icons
-  foxundermoon.shell-format
-  digitalbrainstem.javascript-ejs-support
+  equinusocio.vsc-material-theme
+  equinusocio.vsc-material-theme-icons
   attilabuti.vscode-mjml
+  esbenp.prettier-vscode
+  ms-python.python
+  foxundermoon.shell-format
+  bajdzis.vscode-database
+  vscode-icons-team.vscode-icons
 )
 
 for ext in "${CODE_EXTENSIONS[@]}"; do
