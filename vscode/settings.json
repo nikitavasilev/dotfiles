@@ -5,14 +5,30 @@
   "editor.detectIndentation": false,
   "editor.insertSpaces": true,
   "editor.tabSize": 2,
+  "editor.renderWhitespace": "all",
   "[python]": {
     "editor.tabSize": 4
   },
   "[c]": {
-    "editor.tabSize": 4
+    "editor.tabSize": 4,
+    "editor.insertSpaces": false,
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "editor.formatOnSave": false
   },
   "[cpp]": {
-    "editor.tabSize": 4
+    "editor.tabSize": 4,
+    "editor.insertSpaces": false,
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "editor.formatOnSave": false
+  },
+  "[makefile]": {
+    "editor.tabSize": 4,
+    "editor.insertSpaces": false,
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "editor.formatOnSave": false
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   // auto-save configs
@@ -23,7 +39,8 @@
   "eslint.alwaysShowStatus": true,
   "eslint.autoFixOnSave": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll.tslint": true
+    "source.fixAll.tslint": true,
+    "source.fixAll.eslint": true
   },
   "prettier.singleQuote": true,
   "liveshare.featureSet": "insiders",
@@ -35,5 +52,12 @@
   },
   "python.jediEnabled": false,
   "terminal.integrated.rendererType": "dom",
-  "vsicons.dontShowNewVersionMessage": true
+  "vsicons.dontShowNewVersionMessage": true,
+  "workbench.iconTheme": "vscode-icons",
+  "explorer.confirmDragAndDrop": false,
+  "C_Cpp.updateChannel": "Insiders",
+  "code-runner.runInTerminal": true,
+  "python.languageServer": "Microsoft",
+  "42header.username": "nvasilev",
+  "42header.email": "nvasilev@student.42.fr"
 }
