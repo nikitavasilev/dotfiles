@@ -1,6 +1,6 @@
 {
-  "workbench.colorTheme": "Material Theme Palenight High Contrast",
-  "window.zoomLevel": 0,
+  "workbench.colorTheme": "Community Material Theme Palenight High Contrast",
+  "window.zoomLevel": -1,
   // always Indent by 2 spaces except python, C/C++
   "editor.detectIndentation": false,
   "editor.insertSpaces": true,
@@ -34,10 +34,11 @@
   // auto-save configs
   "editor.formatOnSave": true,
   // disasable prettier for JS
-  "prettier.disableLanguages": ["js"],
+  "[javascript, javascriptreact]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
   // eslint + prettier config
   "eslint.alwaysShowStatus": true,
-  "eslint.autoFixOnSave": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.tslint": true,
     "source.fixAll.eslint": true
@@ -57,7 +58,17 @@
   "explorer.confirmDragAndDrop": false,
   "C_Cpp.updateChannel": "Insiders",
   "code-runner.runInTerminal": true,
-  "python.languageServer": "Microsoft",
+  "python.languageServer": "Default",
   "42header.username": "nvasilev",
-  "42header.email": "nvasilev@student.42.fr"
+  "42header.email": "nvasilev@student.42.fr",
+  "explorer.confirmDelete": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  "editor.inlineSuggest.enabled": true,
+  "github.copilot.enable": {
+    "*": false,
+    "yaml": false,
+    "plaintext": false,
+    "markdown": false,
+    "c": true
+  }
 }
